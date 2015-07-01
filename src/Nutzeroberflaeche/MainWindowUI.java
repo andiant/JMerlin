@@ -658,6 +658,13 @@ public class MainWindowUI extends javax.swing.JFrame {
         return jComboBox2;
     }
 
+    /**
+     * @return the jButton_NewCList
+     */
+    public javax.swing.JButton getjButton_NewCList() {
+        return jButton_NewCList;
+    }
+
     class Item {
 
         private int id;

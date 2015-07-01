@@ -27,6 +27,7 @@ public class MainWindow {
         _ui.getTabbedPane().setEnabledAt(0, true);
         _ui.getTabbedPane().setEnabledAt(1, false);
         _ui.getTabbedPane().setEnabledAt(2, false);
+        _ui.getjButton_NewCList().setEnabled(false);
         
         _loginDialog = new LoginDialog();
 
@@ -52,6 +53,7 @@ public class MainWindow {
                         _ui.getTabbedPane().setEnabledAt(0, true);
                         _ui.getTabbedPane().setEnabledAt(1, true);
                         _ui.getTabbedPane().setEnabledAt(2, false);
+                        _ui.getjButton_NewCList().setEnabled(false);
                     }
                     else if(_dbService.getBerechtigungsstufeVon(_loginDialog.getId()).equals("R02") || _dbService.getBerechtigungsstufeVon(_loginDialog.getId()).equals("R01"))
                     {
@@ -59,6 +61,7 @@ public class MainWindow {
                         _ui.getTabbedPane().setEnabledAt(0, true);
                         _ui.getTabbedPane().setEnabledAt(1, true);
                         _ui.getTabbedPane().setEnabledAt(2, true);
+                        _ui.getjButton_NewCList().setEnabled(true);
                     }
                 }
             }
