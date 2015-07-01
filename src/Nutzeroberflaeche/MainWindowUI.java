@@ -425,12 +425,6 @@ public class MainWindowUI extends javax.swing.JFrame {
         int ortID = item.getID();
 
         String vogelID = jTable2.getValueAt(jTable2.getSelectedRow(), 3).toString();
-        
-        // Prüfen ob der Vogel bereits eingetragen ist.
-        ResultSet rset = _dbservice.getResultSet("SELECT VogelID FROM Sichten s "
-                + " WHERE VogelID=" + vogelID + " AND OrtID=" +ortID);
-        
-
 
         String anfangszeit;
         if (jFormattedTextField_AZeit.getText().isEmpty()) {
